@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pRT-Rq-WMH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="MewtwoAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VQa-yO-nnE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7Wp-q7-QMB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="3"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="o2s-jN-1kD">
+            <objects>
+                <viewController id="pRT-Rq-WMH" customClass="ViewController2" customModule="MewtwoAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y8c-V2-OR3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpl-oj-asg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91D-du-lG5">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="TAP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlk-0P-n8P"/>
+                                    <action selector="tap:" destination="pRT-Rq-WMH" eventType="touchUpInside" id="sqB-Cn-t5b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hpl-oj-asg" firstAttribute="trailing" secondItem="73B-IG-Ddj" secondAttribute="trailing" id="2sn-uV-5x7"/>
+                            <constraint firstItem="hpl-oj-asg" firstAttribute="top" secondItem="Y8c-V2-OR3" secondAttribute="top" id="bor-Hb-usE"/>
+                            <constraint firstAttribute="bottom" secondItem="hpl-oj-asg" secondAttribute="bottom" id="gHT-DZ-hup"/>
+                            <constraint firstItem="hpl-oj-asg" firstAttribute="leading" secondItem="73B-IG-Ddj" secondAttribute="leading" id="pBL-mC-XQe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="73B-IG-Ddj"/>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="hpl-oj-asg" id="ATw-4v-3Eo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5me-Ck-3uF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.92753623188412" y="-12.053571428571429"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,32 @@
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "resources" : [
+    {
+      "filename" : "Bulbizarre.arreferenceimage"
+    },
+    {
+      "filename" : "Carapuce.arreferenceimage"
+    },
+    {
+      "filename" : "Evoli.arreferenceimage"
+    },
+    {
+      "filename" : "Léviator.arreferenceimage"
+    },
+    {
+      "filename" : "Mewtwo.arreferenceimage"
+    },
+    {
+      "filename" : "Rondoudou.arreferenceimage"
+    },
+    {
+      "filename" : "Taupiqueur.arreferenceimage"
+    },
+    {
+      "filename" : "Tortank.arreferenceimage"
+    }
+  ]
+}
