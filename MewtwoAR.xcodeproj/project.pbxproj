@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		75141F8024683F7B00ED282F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75141F7F24683F7B00ED282F /* Lato-Light.ttf */; };
 		75141F8224683F8600ED282F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75141F8124683F8600ED282F /* Lato-Bold.ttf */; };
+		75141F84246883D400ED282F /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75141F83246883D400ED282F /* MenuController.swift */; };
+		75141F86246889B400ED282F /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75141F85246889B400ED282F /* VRViewController.swift */; };
 		75284E9D2466B55900F39634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284E9C2466B55900F39634 /* AppDelegate.swift */; };
 		75284EA12466B55900F39634 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 75284EA02466B55900F39634 /* Experience.rcproject */; };
 		75284EA42466B55900F39634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75284EA22466B55900F39634 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		75141F7F24683F7B00ED282F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
 		75141F8124683F8600ED282F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		75141F83246883D400ED282F /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		75141F85246889B400ED282F /* VRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
 		75284E992466B55900F39634 /* MewtwoAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MewtwoAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75284E9C2466B55900F39634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75284EA02466B55900F39634 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				75284E9C2466B55900F39634 /* AppDelegate.swift */,
 				75284EA02466B55900F39634 /* Experience.rcproject */,
 				75284EA22466B55900F39634 /* Main.storyboard */,
+				75141F83246883D400ED282F /* MenuController.swift */,
+				75141F85246889B400ED282F /* VRViewController.swift */,
 				75284EB02466BA8C00F39634 /* ViewController2.swift */,
 				75284EA52466B55C00F39634 /* Assets.xcassets */,
 				75284EA72466B55C00F39634 /* LaunchScreen.storyboard */,
@@ -154,9 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75141F84246883D400ED282F /* MenuController.swift in Sources */,
 				75284EB12466BA8C00F39634 /* ViewController2.swift in Sources */,
 				75284E9D2466B55900F39634 /* AppDelegate.swift in Sources */,
 				75284EA12466B55900F39634 /* Experience.rcproject in Sources */,
+				75141F86246889B400ED282F /* VRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

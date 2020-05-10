@@ -19,7 +19,10 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        //iOS 13
         
+        
+        //AR
         boxAnchor = try! Experience.loadBox()
         boxAnchor2 = try! Experience.loadBox2()
         

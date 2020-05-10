@@ -35,6 +35,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
+    
+//   func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+//
+//        // Make sure the root controller has been set
+//        // (won't initially be set when the app is launched)
+//        if let navigationController = self.window?.rootViewController as? UINavigationController {
+//
+//            // If the visible view controller is the
+//            // view controller you'd like to rotate, allow
+//            // that window to support all orientations
+//            if navigationController.visibleViewController is VRViewController {
+//                return UIInterfaceOrientationMask.landscape
+//            }
+//
+//            // Else only allow the window to support portrait orientation
+//            else {
+//                return UIInterfaceOrientationMask.landscape
+//            }
+//        }
+//
+//        // If the root view controller hasn't been set yet, just
+//        // return anything
+//        return UIInterfaceOrientationMask.portrait
+//    }
+
 
 
 }
