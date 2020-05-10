@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75141F8024683F7B00ED282F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75141F7F24683F7B00ED282F /* Lato-Light.ttf */; };
+		75141F8224683F8600ED282F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75141F8124683F8600ED282F /* Lato-Bold.ttf */; };
 		75284E9D2466B55900F39634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284E9C2466B55900F39634 /* AppDelegate.swift */; };
 		75284EA12466B55900F39634 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 75284EA02466B55900F39634 /* Experience.rcproject */; };
 		75284EA42466B55900F39634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75284EA22466B55900F39634 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75141F7F24683F7B00ED282F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		75141F8124683F8600ED282F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		75284E992466B55900F39634 /* MewtwoAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MewtwoAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75284E9C2466B55900F39634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75284EA02466B55900F39634 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75141F7C24683F4200ED282F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				75141F8124683F8600ED282F /* Lato-Bold.ttf */,
+				75141F7F24683F7B00ED282F /* Lato-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		75284E902466B55900F39634 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +76,7 @@
 				75284EA52466B55C00F39634 /* Assets.xcassets */,
 				75284EA72466B55C00F39634 /* LaunchScreen.storyboard */,
 				75284EAA2466B55C00F39634 /* Info.plist */,
+				75141F7C24683F4200ED282F /* Fonts */,
 			);
 			path = MewtwoAR;
 			sourceTree = "<group>";
@@ -126,8 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				75284EA92466B55C00F39634 /* LaunchScreen.storyboard in Resources */,
+				75141F8224683F8600ED282F /* Lato-Bold.ttf in Resources */,
 				75284EA62466B55C00F39634 /* Assets.xcassets in Resources */,
 				75284EA42466B55900F39634 /* Main.storyboard in Resources */,
+				75141F8024683F7B00ED282F /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

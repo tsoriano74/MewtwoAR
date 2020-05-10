@@ -1,26 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pRT-Rq-WMH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--ARView-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Page View Controller-->
+        <scene sceneID="MMZ-bb-2wc">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="MewtwoAR" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VQa-yO-nnE">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="uHP-7D-Lfh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kX-HQ-XwO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-681" y="-12"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="N1X-uc-gcq">
+            <objects>
+                <viewController id="pPI-Ae-THw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bcm-E4-t8I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="7Wp-q7-QMB"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-100" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32t-E4-rE3" userLabel="Title">
+                                <rect key="frame" x="0.0" y="44" width="414" height="224"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POKE3D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBO-9P-ryL">
+                                        <rect key="frame" x="135.5" y="0.0" width="143.5" height="173.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="36"/>
+                                        <color key="textColor" name="Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARDS SCANNER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIG-v1-GJu">
+                                        <rect key="frame" x="145.5" y="50.5" width="123" height="173.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                        <color key="textColor" name="Text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IYU-Hb-HfR" userLabel="Buttons">
+                                <rect key="frame" x="0.0" y="268" width="414" height="269"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlf-Bt-Qou">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                                        <color key="backgroundColor" name="Button1"/>
+                                        <state key="normal" title="AR Mode"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZn-qZ-jBe">
+                                <rect key="frame" x="0.0" y="537" width="414" height="359"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokecenter" translatesAutoresizingMaskIntoConstraints="NO" id="R0X-yb-jWA">
+                                        <rect key="frame" x="31.5" y="48" width="351" height="263"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="R0X-yb-jWA" secondAttribute="height" multiplier="351:263" id="TxV-bf-oBq"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="R0X-yb-jWA" firstAttribute="centerY" secondItem="sZn-qZ-jBe" secondAttribute="centerY" id="CX9-EI-zP7"/>
+                                    <constraint firstItem="R0X-yb-jWA" firstAttribute="centerX" secondItem="sZn-qZ-jBe" secondAttribute="centerX" id="ubp-5W-1G8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="BG"/>
+                        <constraints>
+                            <constraint firstItem="sZn-qZ-jBe" firstAttribute="top" secondItem="IYU-Hb-HfR" secondAttribute="bottom" id="3S6-3l-Hgm"/>
+                            <constraint firstItem="32t-E4-rE3" firstAttribute="top" secondItem="sc2-j5-Uah" secondAttribute="top" id="3kr-qI-def"/>
+                            <constraint firstItem="sc2-j5-Uah" firstAttribute="trailing" secondItem="32t-E4-rE3" secondAttribute="trailing" id="4wi-69-f4m"/>
+                            <constraint firstItem="32t-E4-rE3" firstAttribute="leading" secondItem="sc2-j5-Uah" secondAttribute="leading" id="5uQ-jX-2bF"/>
+                            <constraint firstItem="sZn-qZ-jBe" firstAttribute="leading" secondItem="sc2-j5-Uah" secondAttribute="leading" id="7Kn-m4-c5G"/>
+                            <constraint firstItem="nlf-Bt-Qou" firstAttribute="height" secondItem="bcm-E4-t8I" secondAttribute="height" multiplier="0.3" id="JX1-Sx-dOO"/>
+                            <constraint firstItem="sc2-j5-Uah" firstAttribute="trailing" secondItem="IYU-Hb-HfR" secondAttribute="trailing" id="M4b-of-HqA"/>
+                            <constraint firstItem="32t-E4-rE3" firstAttribute="height" secondItem="bcm-E4-t8I" secondAttribute="height" multiplier="0.25" id="McU-Yh-jl8"/>
+                            <constraint firstItem="IYU-Hb-HfR" firstAttribute="leading" secondItem="sc2-j5-Uah" secondAttribute="leading" id="Zs3-2s-wXq"/>
+                            <constraint firstItem="sZn-qZ-jBe" firstAttribute="trailing" secondItem="sc2-j5-Uah" secondAttribute="trailing" id="bnf-BW-Ehh"/>
+                            <constraint firstItem="IYU-Hb-HfR" firstAttribute="top" secondItem="32t-E4-rE3" secondAttribute="bottom" id="laE-Dq-Jle"/>
+                            <constraint firstAttribute="bottom" secondItem="sZn-qZ-jBe" secondAttribute="bottom" id="yDV-Gi-iKT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sc2-j5-Uah"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6H-Ug-9Z4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87" y="3"/>
+            <point key="canvasLocation" x="24.637681159420293" y="-12.053571428571429"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="o2s-jN-1kD">
@@ -38,7 +114,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="TAP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlk-0P-n8P"/>
                                     <action selector="tap:" destination="pRT-Rq-WMH" eventType="touchUpInside" id="sqB-Cn-t5b"/>
                                 </connections>
                             </button>
@@ -61,4 +136,16 @@
             <point key="canvasLocation" x="744.92753623188412" y="-12.053571428571429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pokecenter" width="351" height="263"/>
+        <namedColor name="BG">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button1">
+            <color red="0.99607843137254903" green="0.37254901960784315" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.30196078431372547" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
