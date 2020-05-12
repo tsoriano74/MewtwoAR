@@ -38,5 +38,30 @@
     "libraryIdentifier" : "11c6c5cd3981a24cb0aa0eed52cf39d6",
     "format" : "image",
     "displayName" : "Taupiqueur.png"
+  },
+  {
+    "libraryIdentifier" : "4469bf6cabf4625cecfc38031f360903",
+    "format" : "model",
+    "displayName" : "Taupiqueur.usdz"
+  },
+  {
+    "libraryIdentifier" : "bac67879cec9b8f6558ab1ac21589828",
+    "format" : "model",
+    "displayName" : "Léviator.usdz"
+  },
+  {
+    "libraryIdentifier" : "8d5ad66f835e7af01bb63cc8bda365f9",
+    "format" : "image",
+    "displayName" : "Léviator.png"
+  },
+  {
+    "libraryIdentifier" : "99576bd4588669e9c41cdc79646e53ad",
+    "format" : "image",
+    "displayName" : "IMG_8836.jpeg"
+  },
+  {
+    "libraryIdentifier" : "a9e0a53658a53619d40e591521ace720",
+    "format" : "image",
+    "displayName" : "IMG_8837.jpeg"
   }
 ]

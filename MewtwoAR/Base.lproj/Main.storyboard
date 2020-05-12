@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pPI-Ae-THw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pRT-Rq-WMH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -16,13 +16,28 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Page View Controller-->
-        <scene sceneID="MMZ-bb-2wc">
+        <!--View Controller-->
+        <scene sceneID="3p1-M9-zJI">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="uHP-7D-Lfh" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1kX-HQ-XwO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="VUY-4z-NDw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ef9-DL-OAd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrg-bM-sQQ">
+                                <rect key="frame" x="77" y="248" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="2R1-u2-7ub"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="NhW-f2-Pbq"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Z6T-jX-3q1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44e-XO-cXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-880" y="-12"/>
+            <point key="canvasLocation" x="-797" y="-12"/>
         </scene>
         <!--Menu Controller-->
         <scene sceneID="N1X-uc-gcq">
@@ -64,6 +79,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="ARMode:" destination="pPI-Ae-THw" eventType="touchUpInside" id="1kM-5N-ltE"/>
+                                                    <action selector="AnimationOutlet:" destination="vK8-T5-EBv" eventType="touchUpInside" id="H49-mG-ibB"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -153,13 +169,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6H-Ug-9Z4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vK8-T5-EBv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="30" y="-12"/>
         </scene>
-        <!--View Controller2-->
+        <!--View Controller-->
         <scene sceneID="o2s-jN-1kD">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="pRT-Rq-WMH" customClass="ViewController2" customModule="MewtwoAR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="pRT-Rq-WMH" customClass="ARViewController" customModule="MewtwoAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y8c-V2-OR3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,11 +187,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axu-B8-xke">
                                 <rect key="frame" x="0.0" y="672" width="414" height="224"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91D-du-lG5">
-                                        <rect key="frame" x="122" y="81" width="171" height="63"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91D-du-lG5">
+                                        <rect key="frame" x="103.5" y="78.5" width="207" height="67"/>
                                         <color key="backgroundColor" name="Button1"/>
-                                        <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="17"/>
-                                        <state key="normal" title="Button">
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                        <state key="normal" title="Animation">
                                             <color key="titleColor" name="BG"/>
                                         </state>
                                         <connections>
@@ -184,8 +201,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="91D-du-lG5" firstAttribute="centerX" secondItem="axu-B8-xke" secondAttribute="centerX" id="MCs-Hw-rYu"/>
-                                    <constraint firstItem="91D-du-lG5" firstAttribute="centerY" secondItem="axu-B8-xke" secondAttribute="centerY" id="MFK-cL-sM4"/>
+                                    <constraint firstItem="91D-du-lG5" firstAttribute="height" secondItem="axu-B8-xke" secondAttribute="height" multiplier="0.3" id="AeJ-ES-7Ys"/>
+                                    <constraint firstItem="91D-du-lG5" firstAttribute="centerY" secondItem="axu-B8-xke" secondAttribute="centerY" id="Pbi-Va-ftn"/>
+                                    <constraint firstItem="91D-du-lG5" firstAttribute="width" secondItem="axu-B8-xke" secondAttribute="width" multiplier="0.5" id="lbv-CS-mhE"/>
+                                    <constraint firstItem="91D-du-lG5" firstAttribute="centerX" secondItem="axu-B8-xke" secondAttribute="centerX" id="tI4-hl-lPE"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -204,6 +223,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="RhD-uX-7Qa"/>
                     <connections>
+                        <outlet property="AnimationOutlet" destination="91D-du-lG5" id="L6r-k7-uYe"/>
                         <outlet property="arView" destination="hpl-oj-asg" id="ATw-4v-3Eo"/>
                     </connections>
                 </viewController>
@@ -214,7 +234,7 @@
         <!--View Controller-->
         <scene sceneID="lcc-l5-Ijc">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="hMF-zk-Epu" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hMF-zk-Epu" customClass="VRViewController" customModule="MewtwoAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HkH-tN-Mof">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

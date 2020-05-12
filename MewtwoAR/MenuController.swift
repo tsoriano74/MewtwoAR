@@ -42,9 +42,9 @@ class MenuController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toAR" {
-            let destinationVC = segue.destination as! ViewController2
-        }
+//        if segue.identifier == "toAR" {
+//            let destinationVC = segue.destination as! ARViewController
+//        }
 
     }
     

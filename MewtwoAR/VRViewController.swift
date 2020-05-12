@@ -9,10 +9,14 @@
 import UIKit
 
 class VRViewController: UIViewController {
-
+    
+    var mewtwoAnchor:Experience.Mewtwo!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        mewtwoAnchor = try! Experience.loadMewtwo()
+        arView.scene.anchors.append(mewtwoAnchor)
     }
-
+    
 }
