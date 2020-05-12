@@ -10,18 +10,25 @@ import UIKit
 import RealityKit
 import ARKit
 
+
+protocol arDelegate {
+    func arRetour()
+}
 class ARViewController: UIViewController, UIGestureRecognizerDelegate {
     
     
     // MARK: - Properties
+    var delegate:arDelegate?
     var mewtwoAnchor:Experience.Mewtwo!
     var evoliAnchor:Experience.Evoli!
     var leviatorAnchor:Experience.Léviator!
     var taupiqueurAnchor:Experience.Taupiqueur!
     
+    
     // MARK: - IBOutlets
     @IBOutlet var arView: ARView!
     @IBOutlet var AnimationOutlet: UIButton!
+    @IBOutlet var retourOutlet: UIButton!
     
     
     
@@ -69,6 +76,10 @@ class ARViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBAction func tap(_ sender: UIButton) {
         mewtwoAnchor.notifications.start.post()
         evoliAnchor.notifications.start2.post()
+    }
+    @IBAction func retour(_ sender: UIButton) {
+        delegate?.arRetour()
+        dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Navigation

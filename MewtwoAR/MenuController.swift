@@ -8,7 +8,9 @@
 
 import UIKit
 
-class MenuController: UIViewController {
+class MenuController: UIViewController, arDelegate, vrDelegate {
+    
+    
     
     
     // MARK: - Properties
@@ -17,6 +19,7 @@ class MenuController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet var ARModeOutlet: UIButton!
     @IBOutlet var VRModeOutlet: UIButton!
+
     
     
     // MARK: - Life Cycle
@@ -25,6 +28,7 @@ class MenuController: UIViewController {
         //Styling
         ARModeOutlet.layer.cornerRadius = 20
         VRModeOutlet.layer.cornerRadius = 20
+       
         
     }
     
@@ -34,6 +38,7 @@ class MenuController: UIViewController {
     // MARK: - IBActions
     @IBAction func ARMode(_ sender: UIButton) {
         performSegue(withIdentifier: "toAR", sender: self)
+        
     }
     
     @IBAction func VRMode(_ sender: UIButton) {
@@ -42,10 +47,11 @@ class MenuController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "toAR" {
-//            let destinationVC = segue.destination as! ARViewController
-//        }
-
+                if segue.identifier == "toAR" {
+                    let destinationVC = segue.destination as! ARViewController
+                    destinationVC.delegate = self
+                }
+        
     }
     
     
@@ -53,7 +59,13 @@ class MenuController: UIViewController {
     
     
     // MARK: - Extensions
+    func arRetour() {
+       
+    }
     
+    func vrRetour() {
+        //
+    }
     
     
     
